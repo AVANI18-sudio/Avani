@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Table Example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #000;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    .nested-table {
+      width: 80%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nested Table Example</h1>
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>
+        <table class="nested-table">
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Laptop</td>
+            <td>$1200</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>Furniture</td>
+      <td>
+        <table class="nested-table">
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Table</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Chair</td>
+            <td>$75</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
